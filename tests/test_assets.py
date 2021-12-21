@@ -1,4 +1,4 @@
-"""checks paths"""
+"""tests paths module"""
 
 from lit_junkie.logo import LOGO
 from lit_junkie.paths import PROJECT_ROOT, SOURCE_ROOT, TEST_DIRECTORY
