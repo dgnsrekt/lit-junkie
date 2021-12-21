@@ -1,9 +1,14 @@
 """Book data storage."""
-from pathlib import Path
 import pickle
+from pathlib import Path
 
 from .paths import STORAGE_PATH
 from .schemas import GoogleBookList
+
+
+def exists(path: Path = STORAGE_PATH):
+    """Helper function to check if reading list path exists."""
+    return path.exists()
 
 
 def load_books(path: Path = STORAGE_PATH) -> GoogleBookList:
@@ -16,7 +21,7 @@ def load_books(path: Path = STORAGE_PATH) -> GoogleBookList:
         GoogleBookList: List of de-serialized Google Book Data.
         None: if path doesn't exist.
     """
-    if path.exists() is False:
+    if not exists(path):
         return None
 
     with open(path, mode="rb") as file:
