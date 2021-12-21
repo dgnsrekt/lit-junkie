@@ -13,5 +13,6 @@ SUBJECT_DATA = [
 
 @pytest.mark.parametrize("subject,expected", SUBJECT_DATA)
 def test_clean_subject(subject, expected):
+    """Tests clean subject function properly creates search queries."""
     result = search.clean_subject(subject)
     assert result == expected
