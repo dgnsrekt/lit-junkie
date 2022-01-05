@@ -94,4 +94,9 @@ def search_google_books(subject: str) -> Optional[GoogleBookList]:
     data = response.json()
     if not data:
         return None
+
+    total_items = data.get("totalItems")
+    if not total_items:
+        return None
+
     return GoogleBookList(**data)

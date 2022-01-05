@@ -70,3 +70,7 @@ def search_prompt(infomation):
         return output
     print("Invalid input.")
     return search_prompt(infomation)
+
+
+def continue_prompt():
+    input("Hit Enter to Go Back to the Main Menu")

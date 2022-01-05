@@ -68,6 +68,11 @@ class Search(View):
         query = prompt.search_prompt("Please input your query.")
         found_books = search.search_google_books(query)
 
+        if not found_books:
+            print("No books found.")
+            prompt.continue_prompt()
+            return Route.Main
+
         self.display_header()
 
         print("Which book would you like to store?\n")
@@ -106,7 +111,7 @@ class ReadingList(View):
         reading_list = storage.load_books()
         reading_list.pretty_print()
 
-        input("Hit Enter to Go Back to the Main Menu")
+        prompt.continue_prompt()
 
         return Route.Main
 
