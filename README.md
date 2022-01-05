@@ -26,7 +26,7 @@ The first step is admitting you have an addiction to reading.
 - [x] Remove 'CTRL-C'. Add UI Friendly graceful exit.
 
 ## Watch it run
-[![asciicast](https://asciinema.org/a/457883.svg)](https://asciinema.org/a/457883)
+[![asciicast](https://asciinema.org/a/459958.svg)](https://asciinema.org/a/459958)
 
 ## Install and run with Poetry
 
