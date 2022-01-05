@@ -21,6 +21,10 @@ The first step is admitting you have an addiction to reading.
 - [x] **Reading List** is a local reading list and not tied to Google Books’s account features.
 - [x] Feel free to use a library (or not) for the Google Books call or JSON parsing.
 
+## Application Improvements
+- [x] Correct application error when no match is found on the Google Books API. Example 'dafbohdfb'. Add tests.
+- [x] Remove 'CTRL-C'. Add UI Friendly graceful exit.
+
 ## Watch it run
 [![asciicast](https://asciinema.org/a/457883.svg)](https://asciinema.org/a/457883)
 

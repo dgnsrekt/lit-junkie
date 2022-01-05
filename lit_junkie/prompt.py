@@ -33,7 +33,6 @@ def show_header(header: str) -> None:
     print("=" * LOGO_WIDTH)
     print(spaces + header)
     print("=" * LOGO_WIDTH)
-    print("Press (CTRL + C) to exit the application.")
     print()
 
 
@@ -70,3 +69,8 @@ def search_prompt(infomation):
         return output
     print("Invalid input.")
     return search_prompt(infomation)
+
+
+def continue_prompt():
+    print("Hit enter to go back to the Main Menu.")
+    input()
